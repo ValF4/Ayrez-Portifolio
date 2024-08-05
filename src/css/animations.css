@@ -1,0 +1,26 @@
+@keyframes opacity_wellcom {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes bg_animation {
+    0% {
+        background-position-y: 100%;
+    }
+    100%{
+        background-position-y: 80%;
+    }
+}
+
+@keyframes bg_animation_dados {
+    0% {
+        background-position-y: 80%;
+    }
+    100% {
+        background-position-y: 50%;
+    }
+}

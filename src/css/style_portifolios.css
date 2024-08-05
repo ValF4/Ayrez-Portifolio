@@ -1,0 +1,130 @@
+:root {
+    --cinza: rgb(46, 46, 46);
+}
+
+.img_main {
+    position: relative;
+    z-index: -1;
+    background-color: var(--main-bg-color);
+}
+
+.img_main > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    mask-image: none;
+    -webkit-mask-image: linear-gradient(to top, rgb(0, 0, 0) 50% ,transparent 100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.text_main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.text_main > h1 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: var(--bold-font-weigh);
+}
+
+.description_project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10vw auto;
+    flex-direction: column;
+}
+
+.conteiner_description_project {
+    display: flex;
+    min-width: 70%;
+    height: auto;
+    align-items: center;
+}
+
+.conteiner_description_project > h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    color: var(--black-color-font);
+}
+
+.conteiner_description_project:after{
+    content: '';
+    margin: auto;
+    display: inline-block;
+    width: 60%;
+    margin-left: 20px;
+    height: 2px;
+    background-color: var(--cinza);
+}
+
+.text_desciption_portifolio {
+    width: 50%;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.text_desciption_portifolio p{
+    font-size: 1.2em;
+    color: var(--cinza);
+}
+
+.section_imgs_portifolio {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vw;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs_portifolio {
+    display: block;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px){
+    .text_main > h1 {
+        font-size: 1.3em;
+    }
+
+    .conteiner_description_project > h2 {
+        font-size: 0.9em;
+    }
+
+    .conteiner_description_project:after{
+        width: 38%;
+    }
+
+    .text_desciption_portifolio {
+        width: 70%;
+
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+
+    .text_main > h1 {
+        font-size: 1.5em;
+    }
+
+    .conteiner_description_project > h2 {
+        font-size: 1em;;
+    }
+
+    .conteiner_description_project:after{
+        width: 40%;
+    }
+
+}
+
+
