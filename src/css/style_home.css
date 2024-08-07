@@ -23,7 +23,6 @@
 .section_apresentacao h1 {
     width: 250px;
     font-size: 1.6em;
-    opacity: 1;
     line-height: 30px;
     color: var(--main-color-font);
     animation: opacity_wellcom .5s both .5s;
@@ -49,47 +48,29 @@
     transition: .5s;
 }
 
-.section_dados {
-    padding: 100px 0;
-    color: aliceblue;
+.section_jogos {
+    text-align: center;
+    padding: 0 auto;
+    color: var(--main-color-font);
 }
 
-#top_hits_title {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
+#top_hits_title p {
+    padding: 0 0 15px;
 }
 
 #box_top_hits_h2 {
     font-size: 2em;
-    margin: 10px;
 }
 
 #box_top_hits_h2::after {
     content: '';
+    margin: 10px 0;
     display: inline-block;
-    width: 250px;
+    width: 150px;
     text-align: center;
     align-items: center;
     height: 3px;
     background-color: var(--paleta-branco-color);
-}
-
-#logo_efeitos {
-    position: absolute;
-    width: 400px;
-    opacity: .7;
-    transform: rotatex(85deg) translate(-50%, -50%);
-    z-index: 1;
-    top: 60%;
-    left: 50%;
-}
-
-.background_infos {
-    background: radial-gradient(circle, rgb(77, 77, 77) 0%, rgba(0, 0, 0, 1) 20%);
-    background-size: 100% 200%;
-    animation: bg_animation_dados 5s both;
 }
 
 .box_game_hits {
@@ -109,8 +90,7 @@
     flex-direction: column;
     border-radius: 5px;
     align-items: center;
-    width: 500px;
-    padding: 10px;
+    width: 75vw;
 }
 
 .box_infos {
@@ -123,13 +103,19 @@
 }
 
 .box_infos img {
-    padding: 10px;
     text-emphasis: none;
-    width: 50vh;
+    width: 70vw;
+    padding: 10px;
+    height: auto;
 }
 
 .box_infos h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
+}
+
+.box_infos p {
+    font-size: .8em;
+    padding: 10px 0;
 }
 
 .box_item {
@@ -145,106 +131,62 @@
     font-size: 0.8em;
 }
 
-.section_servicos {
+.VIEW_BUTTON {
+    width: 150px;
+    background-color: #111111;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 8x;
+    cursor: pointer;
+    color: var(--main-color-font);
+}
+
+.section_sobre {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     padding: 30px 0;
 }
 
-#box_servicos {
+#box_titulo_servicos {
     margin: 10px auto;
     color: var(--main-color-font);
     font-size: 1.5em;
 }
 
-#box_servicos::after {
+#box_titulo_servicos::after {
     content: '';
+    margin: 10px 0;
     display: inline-block;
-    width: 120px;
+    width: 150px;
     text-align: center;
+    align-items: center;
     height: 3px;
-    background-color: var(--paleta-roxo-color);
+    background-color: var(--paleta-branco-color);
 }
 
 .conteiner_serviços {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 24px;
 }
 
-.box_servicos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #f0f0f0;
-    justify-content: space-evenly;
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    border: 1px solid #ffffff41;
-    background-color: #111111;
-    transition: all .5s;
-}
-
-.box_servicos:hover {
-    scale: 1.1;
-    box-shadow: 0 0 6px #9a48e7;
-    border-color: #9a48e7;
-}
-
-.icon_servicos {
-    width: 100px;
-    margin: 5px;
-}
-
-.box_servicos>h3 {
-    margin: 10px;
-}
-
-.section_empresas{
-    display: flex;
-    color: #f0f0f0;
-    width: 300px;
-    margin: 0 auto;
-    flex-direction: column;
+.box_sobre {
     justify-content: center;
     text-align: center;
+    padding: 0 15px;
+    color: #f0f0f0;
+    font-size: 0.8em;
 }
 
-.section_empresas > div > h4 {
-    font-size: 1.7em;
-}
-
-.section_empresas > div > h4::after {
-    content: '';
-    display: inline-block;
-    width: 150px;
+.section_contato {
+    display: flex;
+    width: 100%;
     text-align: center;
-    align-items: center;
-    height: 3px;
-    background-color: var(--paleta-roxo-color);
-}
-
-.section_empresas > div > p {
-    font-size: .9em;
-    color: #e2e2e2;
-    margin: 10px 0;
-}
-
-.conteiner_empresas_icons{
-    display: grid;
     justify-content: center;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr;
-    opacity: 1;
-    transition: all 0.5s;
-}
-
-.icons_empresas {
-    width: 200px;
 }
 /*
 @media only screen and (min-width: 768px) and (max-width:  992px) {
