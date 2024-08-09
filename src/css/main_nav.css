@@ -146,6 +146,7 @@ footer {
 
 .selecao_footer {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: var(--size-width_100);
 }

@@ -10,7 +10,7 @@ function click_menu() {
     else {
       document.documentElement.style.overflow = 'hidden';
       document.body.scroll = "no";
-        options.style.display = 'flex'
+      options.style.display = 'flex'
     }
 }
 
