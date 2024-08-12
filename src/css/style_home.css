@@ -122,6 +122,11 @@
     display: inline-block;
 }
 
+.box_item button:hover {
+    transition: 0.5s;
+    background-color: #00751d;
+}
+
 .box_item p {
     display: inline-block;
     word-break: keep-all;
@@ -286,7 +291,12 @@
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1920px) {
+
+    .section_apresentacao {
+        height: 58rem;
+    }
+
     .section_apresentacao h1 {
         width: 100%;
         font-size: 3em;
@@ -305,8 +315,32 @@
     .box_game_hits {
         width: 100%;
         flex-direction: row;
-        gap: 2rem;
+        gap: 3rem;
         padding: 50px 0;
+    }
+
+    .conteiner_games {
+        width:25rem;
+        justify-content: space-around;
+        height: 25rem;
+    } 
+
+    .box_infos img {
+        margin: 20px;
+        width: 15vw;
+    }
+
+    .box_infos h3 {
+        font-size: 1.6em;
+    }
+
+    .box_infos p {
+        font-size: 1em;
+    }
+
+    .box_item button {
+        height: 2vw;
+        width: 5vw;
     }
 
     #top_hits_title p {
@@ -314,23 +348,29 @@
     }
 
     #box_titulo_servicos h3 {
-        font-size: 1.2em;
+        font-size: 1.6em;
     }
 
-    .box_sobre p{
+    .box_sobre p {
         font-size: 1em;
-        margin: 3rem;
+        margin: 0 15rem;
     }
 
     #Conteiner_Contatos {
         padding: 20px 0;
     }
 
+    #Conteiner_Contatos p {
+        font-size: em;
+    }
+
     #Forms_conteiner {
-        width: 80vw;
+        width: 50vw;
     }
 
     .input_Contact {
+        width: 50vw;
+        height: 1.5vw;
         font-size: 1em;
     }
 }
