@@ -29,7 +29,7 @@
     position: fixed;
     width: var(--size-width_100);
     backdrop-filter: blur(0px);
-    height: 150px;
+    height: 10em;
     background-color: rgba(0, 0, 0, 0);
     align-items: center;
     transition: 0.5s;
@@ -47,15 +47,15 @@
     position: relative;
     z-index: 3;
     cursor: pointer;
-    width: 30px;
-    padding: 30px;
+    width: 2rem;
+    padding: 2rem;
 }
 
 #logo_nav {
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 25px;
+    padding: 1.5rem;
     width: var(--main_size_logo_nav);
     transform: translate(-50%, -50%);
 }
@@ -67,11 +67,11 @@
     flex-direction: column;
     justify-content: space-evenly;
     top: 0;
-    left: 49.99%;
-    width: var(--size-width_100);
-    background: #000000e1;
-    backdrop-filter: blur(3px);
+    left: 50%;
     height: 100vh;
+    width: var(--size-width_100);
+    background: var(--black-color-font);
+    backdrop-filter: blur(3px);
     transform: translate(-50%, 0);
     transition: .2s;
 }
@@ -97,7 +97,7 @@
     color: #969696;
 }
 
-.links_nav li:hover {
+.links_nav a li:hover {
     transition: all 1s;
     background-color: #242424;
 }
@@ -111,24 +111,16 @@
 }
 
 .icons_sociais {
-    width: 25px;
+    width: 20px;
     height: 50%;
     align-items: center;
     padding: 10px;
-    border-radius: 49%;
+    border-radius: 20%;
     transition: .5s;
-}
-
-#behance_icon:hover {
-    background-color: rgb(0, 0, 148);
 }
 
 #insta_icon:hover {
     background-color: #D8246C;
-}
-
-#fecebook_icon:hover {
-    background-color: #3A559F;
 }
 
 #tiktok_icon:hover {
@@ -142,6 +134,7 @@
 footer {
     background-color: var(--main-bg-color);
     text-align: center;
+    padding: 30px 0 10px;
 }
 
 .selecao_footer {
@@ -162,6 +155,6 @@ footer {
 
 .direitos p {
     color: rgb(151, 151, 151);
-    font-size: 0.8em;
-    line-height: 20px;
+    font-size: 0.7em;
+    line-height: 15px;
 }

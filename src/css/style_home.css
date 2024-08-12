@@ -5,14 +5,13 @@
 
 .section_apresentacao {
     display: flex;
-    background: transparent;
     background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 90%);
     background-attachment: fixed;
     background-size: 100% 300%;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 700px;
+    height: 45rem;
     align-items: center;
     width: var(--size-width_100);
     mask-image: linear-gradient(to top, transparent 0%, black 100%);
@@ -20,24 +19,24 @@
 }
 
 .section_apresentacao h1 {
-    width: 250px;
-    font-size: 1.6em;
-    line-height: 30px;
+    width: 15rem;
+    font-size: 1.4em;
+    line-height: .5rem;
     color: var(--main-color-font);
     animation: opacity_wellcom .5s both .5s;
 }
 
 .section_apresentacao p {
-    width: 250px;
-    font-size: 1em;
-    margin-top: 20px;
-    color: #ffffff;
+    width: 15rem;
+    font-size: .8em;
+    margin-top: 1rem;
+    color: var(--main-color-font);
     animation: opacity_wellcom .5s both .6s;
 }
 
 .section_apresentacao img {
-    width: 25px;
-    margin-top: 20px;
+    width: 1.5rem;
+    margin-top: .8rem;
     transition: .5s;
     animation: opacity_wellcom .5s both .7s;
 }
@@ -49,27 +48,29 @@
 
 .section_jogos {
     text-align: center;
-    padding: 0 auto;
     color: var(--main-color-font);
 }
 
 #top_hits_title p {
-    padding: 0 0 15px;
+    padding: 0 0 .5rem;
 }
 
-#box_top_hits_h2 {
-    font-size: 2em;
+#box_top_hits_h2 h2{
+    font-size: 1.3em;
 }
 
 #box_top_hits_h2::after {
     content: '';
-    margin: 10px 0;
     display: inline-block;
-    width: 150px;
     text-align: center;
-    align-items: center;
-    height: 3px;
     background-color: var(--paleta-branco-color);
+    margin: 10px 0;
+    width: 8rem;
+    height: .1rem;
+}
+
+#top_hits_title p {
+    font-size: .8em;
 }
 
 .box_game_hits {
@@ -78,7 +79,6 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
 }
 
 .conteiner_games {
@@ -161,11 +161,10 @@
     content: '';
     display: inline-block;
     text-align: center;
-    align-items: center;
     background-color: var(--paleta-branco-color);
     margin: 10px 0;
     width: 8rem;
-    height: 0.2rem;
+    height: .1rem;
 }
 
 .conteiner_serviços {
@@ -183,7 +182,7 @@
 }
 
 .box_sobre p {
-    margin: 1rem;
+    margin: 1.5rem;
 }
 
 .section_contato {
@@ -237,23 +236,101 @@
     width: 10rem;
 }
 
-/*
+
 @media only screen and (min-width: 768px) and (max-width:  992px) {
-    .main_titulo h1 {
-        font-size: 2.4em;
+    .section_apresentacao h1 {
+        width: 100%;
+        font-size: 2em;
+        line-height: 20px;
     }
 
-    .overlay p {
-        font-size: 1.6em;
+    .section_apresentacao p {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    #box_top_hits_h2 {
+        font-size: 1.7em;
+    }   
+
+    .box_game_hits {
+        width: 100%;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 25px 0;
+    }
+
+    #top_hits_title p {
+        font-size: 1em; 
+    }
+
+    #box_titulo_servicos h3 {
+        font-size: 1.2em;
+    }
+
+    .box_sobre p{
+        font-size: 1em;
+        margin: 1.5rem;
+    }
+
+    #Conteiner_Contatos {
+        padding: 20px 0;
+    }
+
+    #Forms_conteiner {
+        width: 80vw;
+    }
+
+    .input_Contact {
+        font-size: 1em;
     }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .main_titulo h1 {
-        font-size: 2.5em;
+    .section_apresentacao h1 {
+        width: 100%;
+        font-size: 3em;
+        line-height: 20px;
     }
 
-    .overlay p {
-        font-size: 2em;
+    .section_apresentacao p {
+        width: 100%;
+        font-size: 1em;
     }
-} */
+
+    #box_top_hits_h2 {
+        font-size: 2em;
+    }   
+
+    .box_game_hits {
+        width: 100%;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 50px 0;
+    }
+
+    #top_hits_title p {
+        font-size: 1em; 
+    }
+
+    #box_titulo_servicos h3 {
+        font-size: 1.2em;
+    }
+
+    .box_sobre p{
+        font-size: 1em;
+        margin: 3rem;
+    }
+
+    #Conteiner_Contatos {
+        padding: 20px 0;
+    }
+
+    #Forms_conteiner {
+        width: 80vw;
+    }
+
+    .input_Contact {
+        font-size: 1em;
+    }
+}
