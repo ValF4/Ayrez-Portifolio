@@ -1,4 +1,4 @@
-let hamburguerMenu = document.querySelector('img#icon_navegation')
+let hamburguerMenu = document.querySelector('img#logo_nav')
 let menuNav = document.querySelector('#navegation')
 
 function click_menu() {

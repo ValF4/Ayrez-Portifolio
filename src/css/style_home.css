@@ -75,6 +75,7 @@
 
 .box_game_hits {
     width: 100%;
+    gap: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -294,7 +295,7 @@
 @media only screen and (min-width: 992px) and (max-width: 1920px) {
 
     .section_apresentacao {
-        height: 58rem;
+        height: 60rem;
     }
 
     .section_apresentacao h1 {
