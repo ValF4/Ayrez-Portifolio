@@ -292,7 +292,7 @@
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1920px) {
+@media only screen and (min-width: 992px) {
 
     .section_apresentacao {
         height: 60rem;
