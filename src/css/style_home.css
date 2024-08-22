@@ -20,7 +20,7 @@
 
 .section_apresentacao h1 {
     width: 15rem;
-    font-size: 1.4em;
+    font-size: 1.5em;
     line-height: .5rem;
     color: var(--main-color-font);
     animation: opacity_wellcom .5s both .5s;
@@ -56,7 +56,7 @@
 }
 
 #box_top_hits_h2 h2{
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 #box_top_hits_h2::after {
@@ -73,22 +73,13 @@
     font-size: .8em;
 }
 
-.box_game_hits {
-    width: 100%;
-    gap: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
 .conteiner_games {
     background-color: #111111;
-    border: 1px solid #2c2c2c;
+    border: 1px solid #272727;
     box-shadow: 0px 0px 5px #131313f3;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 10px;
     align-items: center;
     width: 250px;
 }
@@ -110,12 +101,14 @@
 }
 
 .box_infos h3 {
+    color: var(--main-color-font);
     font-size: 1.2em;
 }
 
 .box_infos p {
     font-size: .8em;
     padding: 10px 0;
+    color: var(--main-color-font);
 }
 
 .box_item {
@@ -123,8 +116,8 @@
     display: inline-block;
 }
 
-.box_item button:hover {
-    transition: 0.5s;
+.box_item button:hover,  #Send_contatos:hover{
+    transition: 0.2s;
     background-color: #00751d;
 }
 
@@ -239,7 +232,14 @@
     color: var(--main-color-font);
     padding: 0.5rem;
     border-color: var(--paleta-branco-color);
+    cursor: pointer;
     width: 10rem;
+}
+
+#Terms {
+    font-size: .6em;
+    color: var(--main-color-font);
+    padding: 1rem;
 }
 
 
@@ -290,6 +290,10 @@
     .input_Contact {
         font-size: 1em;
     }
+
+    #Terms {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -336,16 +340,11 @@
     }
 
     .box_infos p {
-        font-size: 1em;
-    }
-
-    .box_item button {
-        height: 2vw;
-        width: 5vw;
+        font-size: 1.2em;
     }
 
     #top_hits_title p {
-        font-size: 1em; 
+        font-size: 1.2em; 
     }
 
     #box_titulo_servicos h3 {
@@ -353,7 +352,7 @@
     }
 
     .box_sobre p {
-        font-size: 1em;
+        font-size: 1.2em;
         margin: 0 15rem;
     }
 
@@ -373,5 +372,9 @@
         width: 50vw;
         height: 1.5vw;
         font-size: 1em;
+    }
+    
+    #Terms {
+        font-size: .9em;
     }
 }
